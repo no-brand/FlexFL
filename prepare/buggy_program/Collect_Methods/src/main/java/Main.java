@@ -122,22 +122,22 @@ public class Main {
         MainCorpusPreprocessor.main(args);
 
         // description
-        inputFile = ConfigurationParameters.flattenedBRDir + "/" + ConfigurationParameters.getFilePrefix(defect) + "_Desc.csv";
-        String[] descArgs = {inputFile, ConfigurationParameters.getDocDir(defect)};
-        logger.info("Preprocessor parameters: " + Arrays.toString(descArgs));
-        MainCorpusPreprocessor.main(descArgs);
+        // inputFile = ConfigurationParameters.flattenedBRDir + "/" + ConfigurationParameters.getFilePrefix(defect) + "_Desc.csv";
+        // String[] descArgs = {inputFile, ConfigurationParameters.getDocDir(defect)};
+        // logger.info("Preprocessor parameters: " + Arrays.toString(descArgs));
+        // MainCorpusPreprocessor.main(descArgs);
 
         // title
-        inputFile = ConfigurationParameters.flattenedBRDir + "/" + ConfigurationParameters.getFilePrefix(defect) + "_Titles.csv";
-        String[] titleArgs = {inputFile, ConfigurationParameters.getDocDir(defect)};
-        logger.info("Preprocessor parameters: " + Arrays.toString(titleArgs));
-        MainCorpusPreprocessor.main(titleArgs);
+        // inputFile = ConfigurationParameters.flattenedBRDir + "/" + ConfigurationParameters.getFilePrefix(defect) + "_Titles.csv";
+        // String[] titleArgs = {inputFile, ConfigurationParameters.getDocDir(defect)};
+        // logger.info("Preprocessor parameters: " + Arrays.toString(titleArgs));
+        // MainCorpusPreprocessor.main(titleArgs);
 
         // comment: should be empty
-        inputFile = ConfigurationParameters.flattenedBRDir + "/" + ConfigurationParameters.getFilePrefix(defect) + "_Comm.csv";
-        String[] commArgs = {inputFile, ConfigurationParameters.getDocDir(defect)};
-        logger.info("Preprocessor parameters: " + Arrays.toString(commArgs));
-        MainCorpusPreprocessor.main(commArgs);
+        // inputFile = ConfigurationParameters.flattenedBRDir + "/" + ConfigurationParameters.getFilePrefix(defect) + "_Comm.csv";
+        // String[] commArgs = {inputFile, ConfigurationParameters.getDocDir(defect)};
+        // logger.info("Preprocessor parameters: " + Arrays.toString(commArgs));
+        // MainCorpusPreprocessor.main(commArgs);
     }
 
     public static void callBoostN(String defect) throws IOException, ParseException {
