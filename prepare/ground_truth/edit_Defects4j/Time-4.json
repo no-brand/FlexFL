@@ -1,0 +1,12 @@
+{
+    "buggy": {
+        "/src/main/java/org/joda/time/Partial.java": [
+            464
+        ]
+    },
+    "fixed": {
+        "/src/main/java/org/joda/time/Partial.java": [
+            464
+        ]
+    }
+}

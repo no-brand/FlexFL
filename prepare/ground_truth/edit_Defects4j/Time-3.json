@@ -1,0 +1,29 @@
+{
+    "buggy": {
+        "/src/main/java/org/joda/time/MutableDateTime.java": []
+    },
+    "fixed": {
+        "/src/main/java/org/joda/time/MutableDateTime.java": [
+            639,
+            641,
+            662,
+            664,
+            685,
+            687,
+            708,
+            710,
+            731,
+            733,
+            774,
+            776,
+            797,
+            799,
+            830,
+            832,
+            863,
+            865,
+            898,
+            900
+        ]
+    }
+}

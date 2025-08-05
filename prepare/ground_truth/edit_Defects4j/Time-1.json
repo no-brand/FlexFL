@@ -1,0 +1,27 @@
+{
+    "buggy": {
+        "/src/main/java/org/joda/time/Partial.java": [
+            221
+        ],
+        "/src/main/java/org/joda/time/field/UnsupportedDurationField.java": [
+            227,
+            228,
+            229
+        ]
+    },
+    "fixed": {
+        "/src/main/java/org/joda/time/Partial.java": [
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            230
+        ],
+        "/src/main/java/org/joda/time/field/UnsupportedDurationField.java": []
+    }
+}

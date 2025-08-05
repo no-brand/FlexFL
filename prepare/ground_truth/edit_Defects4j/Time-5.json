@@ -1,0 +1,28 @@
+{
+    "buggy": {
+        "/src/main/java/org/joda/time/Period.java": [
+            1628,
+            1629,
+            1630,
+            1631,
+            1633,
+            1634
+        ]
+    },
+    "fixed": {
+        "/src/main/java/org/joda/time/Period.java": [
+            1628,
+            1629,
+            1630,
+            1631,
+            1632,
+            1634,
+            1635,
+            1636,
+            1637,
+            1638,
+            1639,
+            1640
+        ]
+    }
+}
