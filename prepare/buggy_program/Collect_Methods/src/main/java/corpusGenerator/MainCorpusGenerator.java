@@ -61,6 +61,17 @@ public class MainCorpusGenerator {
       System.err.println("  outputFileNameWithoutExtension");
       System.err.println("    the prefix of the output files (e.g., the name of the software system)");
       System.err.println();
+
+      // methodLevelGranularity
+      // *.corpusRawMethodLevelGranularity : 소스코드 (주석포함)
+      //    /**	     * Returns Calendar.class.	     * 	     * @return Calendar.class	     */	    public Class<?> getSupportedType() {	        return Calendar.class;	    }
+      // *.corpusMappingMethodLevelGranularity : 식별자에 .구분자 사용 (package.class.method) + 라인넘버
+      //    org.joda.time.convert.CalendarConverter.getSupportedType().126.133
+      // *.corpusMappingWithPackageSeparatorMethodLevelGranularity : 식별자에 $구분자 사용 (package$class.method)
+      //    $ 구분이 필요한 도구나 후처리용 (분석도구가 class를 쉽게 구분할 수 있도록 함)
+      //    org.joda.time.convert$CalendarConverter.getSupportedType()
+      // *.corpusRawAndMappingDebugMethodLevelGranularity : 코퍼스 + 매핑정보 + 디버깅용 부가설명 포함
+
       System.err.println("The output produced by this tool using the -methodLevelGranularity option will contain 4 files:");
       System.err.println("  outputFolder/outputFileNameWithoutExtension.corpusRawMethodLevelGranularity");
       System.err.println("    contains the corpus where each method extracted from the java files is on its own line");

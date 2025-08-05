@@ -202,6 +202,8 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
+
+        // java -jar CorpusGenerator.jar -methodLevelGranularity ../file_lists_buggy/Time-25.txt ../methods_buggy_Defects4j/ Time-25
         String granularity = "-methodLevelGranularity";
         String filePrefix = args[0];
         String outputFolder = "../methods_buggy_Defects4j/";
