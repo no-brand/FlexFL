@@ -49,12 +49,36 @@ with open('./bug_list.txt') as f:
     bugs = [e.strip() for e in f.readlines()]
 gt = {}
 for bug in bugs:
+    # org.joda.time.MonthDay.parse(String).94.105
+    # org.joda.time.MonthDay.parse(String,DateTimeFormatter).107.117
     with open(f'../buggy_program/methods_fixed_Defects4j/{bug}.corpusMappingMethodLevelGranularity') as f:
         methods = [e.strip() for e in f.readlines()]
+
+    # org.joda.time$MonthDay.parse(String)
+    # org.joda.time$MonthDay.parse(String,DateTimeFormatter)    
     with open(f'../buggy_program/methods_fixed_Defects4j/{bug}.corpusMappingWithPackageSeparatorMethodLevelGranularity') as f:
         classes = [e.strip() for e in f.readlines()]
+
+    # {
+    # "buggy": {
+    #     "/src/main/java/org/joda/time/DateTimeZone.java": []
+    # },
+    # "fixed": {
+    #     "/src/main/java/org/joda/time/DateTimeZone.java": [
+    #         899,
+    #         900,
+    #         901,
+    #         902,
+    #         903,
+    #         904,
+    #         905,
+    #         906,
+    #         907
+    #     ]
+    # }    
     with open(f'./edit_Defects4j/{bug}.json') as f:
         data = json.load(f)
+
     fixed_methods = []
     for file in data['fixed']:
         src_path = d4j_path_prefix(bug.split("-")[0],bug.split("-")[1])
