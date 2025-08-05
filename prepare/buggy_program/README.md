@@ -1,6 +1,6 @@
 # File structure
 - checkout.sh  : checkout buggy and fixed versions of repositories to extract information, find in `Collect_Methods/repos`
-- get_files.py : tranverse and get source files of buggy and fixed versions of repositories, results in `file_lists_buggy` and `file_lists_buggy`
+- get_files.py : tranverse and get source files of buggy and fixed versions of repositories, results in `file_lists_buggy` and `file_lists_fixed`
 - Collect_Methods : adapted from BoostN to extract methods from a repository using its file lists.
 
 # Run
